@@ -1,0 +1,29 @@
+/* ---footer--- */
+footer {
+  background-color: #d1d8bc;
+
+  .footer-logo img {
+    border-radius: 5px !important;
+    width: 100%;
+    user-select: none;
+  }
+  ul li a {
+    text-decoration: underline;
+    color: $my-secondary !important;
+  }
+  ul li a:hover {
+    color: $my-primary !important;
+  }
+  i {
+    color: #698020;
+  }
+  .fa-location-dot {
+    color: #698020;
+  }
+  #envelope-footer {
+    color: #698020;
+  }
+  #phone-footer {
+    color: #698020;
+  }
+}
