@@ -22,27 +22,8 @@ $border-radius:    2px;
 $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
+
 // Override other variables below!
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@font-face {
-  font-family: "Punarbhaba";
-  src: url("/fonts/Punarbhaba_27-02-2006.ttf") format("ttf");
-}
-
-// VARIABLES
-// Main colors
-$my-primary: #3a4712;
-$my-secondary: #698020;
-
-// Section colors
-$bg-about: #f1f1f1;
-$bg-prestations: #d4dabe;
-
-// Partials colors
-$bg-cards: $my-secondary;
-$border-profile: whitesmoke;
-$shadow-cards: #c0c0c0;
-$bg-form: #d1d8bc;
 
 body {
   overflow-x: hidden;
