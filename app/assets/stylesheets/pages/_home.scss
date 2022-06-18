@@ -1,1 +1,473 @@
 // Specific CSS for your home-page
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496109/jardi_ca/header-min_dtfn7o.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  user-select: none;
+
+  #header-1 {
+    position: absolute;
+    background: rgba(105, 128, 32, 0.5);
+    width: auto;
+    top: 42%;
+    left: 5%;
+    border-radius: 5px !important;
+  }
+  .btn-enter {
+    background: transparent;
+    color: whitesmoke;
+    font-weight: 500;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1em 2.5em;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none !important;
+    border-radius: 5px;
+  }
+  .btn-enter:hover {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    background: $my-primary;
+    color: whitesmoke;
+    text-decoration: none !important;
+  }
+
+  #masthead-title P {
+    color: whitesmoke;
+  }
+
+  #masthead-contact {
+    p {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    .fa-envelope {
+      color: whitesmoke;
+    }
+    .fa-phone {
+      color: whitesmoke;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  #header-1 {
+    top: 34% !important;
+  }
+}
+
+/* ---A propos--- */
+#propos {
+  #img img {
+    user-select: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    box-shadow: 5px 5px 10px #c0c0c0;
+  }
+  a {
+    color: $my-secondary;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $my-primary;
+  }
+}
+
+/* ---Nos prestations--- */
+
+#prestations {
+  background-color: $bg-prestations;
+  position: relative;
+  height: auto;
+  a{
+    color: $my-secondary;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $my-primary;
+  }
+  .bold-title {
+    color: whitesmoke;
+    font-family: Italiana;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .card {
+    background-color: $my-secondary !important;
+    color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    display: block;
+    box-shadow: 0 14px 26px $shadow-cards;
+    transition: all 0.3s ease-out;
+
+    .card-body {
+      position: relative;
+    }
+    .prestations_img {
+      position: absolute;
+      top: -50%;
+      right: -12%;
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/tax_credit_wmwmjo.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 250px;
+      height: 250px;
+      user-select: none;
+    }
+    .card-title {
+      position: relative;
+    }
+    ul li {
+      list-style: url("/img/others/liste_style.svg") !important;
+      user-select: none;
+    }
+    ul li::marker {
+      font-size: 2rem;
+    }
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    border-left: 10px solid $my-primary!important;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .prestations_img {
+    top: 90% !important;
+    right: 0% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+  #lottie-creation {
+    display: none;
+  }
+  #lottie-services {
+    width: 250px !important;
+    height: auto !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1019px) {
+  .prestations_img {
+    top: -10% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1019px) and (max-width: 1231px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1232px) and (max-width: 1400px) {
+  .prestations_img {
+    top: -50%;
+    right: -30% !important;
+  }
+}
+/* ---Nos realisations--- */
+#realisations {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(2.41%, rgba(105, 128, 32, 0.05)),
+    color-stop(49.15%, rgba(153, 164, 119, 0.0802335)),
+    color-stop(99.95%, rgba(196, 196, 196, 0))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(105, 128, 32, 0.05) 2.41%,
+    rgba(153, 164, 119, 0.0802335) 49.15%,
+    rgba(196, 196, 196, 0) 99.95%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(105, 128, 32, 0.05) 2.41%,
+    rgba(153, 164, 119, 0.0802335) 49.15%,
+    rgba(196, 196, 196, 0) 99.95%
+  );
+  .carousel-caption {
+    background: rgba(105, 128, 32, 0.1);
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .carousel-item img {
+    height: auto;
+  }
+}
+.clippath {
+  width: 100%;
+  height: 100px;
+}
+.clippath-top {
+  border-radius: 0 0 50% 50%;
+  background-color: #f8f9f4;
+}
+.clippath-bottom {
+  border-radius: 50% 50% 0 0;
+  background-color: #f4f4f2;
+}
+
+/* ---Nos avis--- */
+#rating {
+  .my-card {
+    position: relative;
+    background-color: $bg-cards;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    width: auto;
+    height: auto;
+    box-shadow: 0 14px 26px $shadow-cards;
+    transition: all 0.3s ease-out;
+    p {
+      font-size: 0.8rem;
+      color: whitesmoke;
+    }
+  }
+  .my-card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards !important;
+  }
+  .profile {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -10%;
+    left: 10%;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 5px $border-profile;
+    &-1 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/B.J-min_cuqqbp.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+    &-2 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/PM-min_ynqxah.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+    &-3 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/JL-min_jlzact.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+  }
+}
+
+/* ---Nous contacter--- */
+#contact {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  border-bottom: 1px solid transparent !important;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(61, 72, 26, 0.06)),
+    to(rgba(255, 255, 255, 0))
+  );
+
+  background: -o-linear-gradient(
+    top,
+    rgba(61, 72, 26, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(61, 72, 26, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  .form-bg {
+    background-color: $bg-form;
+    width: AUTO;
+    border-radius: 5px;
+  }
+  form {
+    select {
+      border-radius: 5px;
+    }
+    input {
+      border-radius: 5px;
+    }
+    textarea {
+      border-radius: 5px;
+    }
+  }
+  #btn-submit {
+    background-color: $my-secondary;
+    font-weight: bold;
+    border: none;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .map-position {
+    position: relative;
+  }
+  #map {
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    box-shadow: 5px 5px 10px #c0c0c0;
+    border-radius: 5px;
+  }
+  .map-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #fff;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 5px;
+    border: #3a4712 1px solid;
+  }
+  #legend {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 240px;
+  }
+  .legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 15px;
+    height: 10px;
+    margin-right: 5px;
+  }
+}
+#btn-submit:hover {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  background: $my-primary !important;
+}
+/* ---footer--- */
+footer {
+  background-color: #d1d8bc;
+
+  .footer-logo img {
+    border-radius: 5px !important;
+    width: 100%;
+    user-select: none;
+  }
+  ul li a {
+    text-decoration: underline;
+    color: $my-secondary !important;
+  }
+  ul li a:hover {
+    color: $my-primary !important;
+  }
+  i {
+    color: #698020;
+  }
+  .fa-location-dot {
+    color: #698020;
+  }
+  #envelope-footer {
+    color: #698020;
+  }
+  #phone-footer {
+    color: #698020;
+  }
+}
+/* ---recruitment--- */
+#recruitment-img {
+  position: fixed;
+  -webkit-position: fixed;
+  bottom: 0;
+  right: 5%;
+  z-index: 100000000000000;
+  -webkit-animation: btn-recruitment 1s ease-in-out infinite alternate;
+  animation: btn-recruitment 1s ease-in-out infinite alternate;
+  display: block;
+  width: 250px;
+  height: auto;
+  user-select: none;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  #recruitment-img {
+    bottom: 0;
+    right: 15%;
+    width: 150px;
+    height: auto;
+  }
+}
+@-webkit-keyframes btn-recruitment {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes btn-recruitment {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+/* ---JS TRANSITIONS--- */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+.reveal-top {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.reveal-bottom {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transform: translateX(0px);
+  transition: 1.3s cubic-bezier(0.5, 0, 0, 1);
+}
