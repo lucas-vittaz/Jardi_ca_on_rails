@@ -3,7 +3,7 @@ header {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background-image: url("/img/others/header-min.webp");
+  background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496109/jardi_ca/header-min_dtfn7o.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@ header {
       position: absolute;
       top: -50%;
       right: -12%;
-      background-image: url("/img/others/tax_credit.webp");
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/tax_credit_wmwmjo.webp");
       background-repeat: no-repeat;
       background-size: contain;
       width: 250px;
@@ -273,19 +273,19 @@ header {
     border-radius: 50%;
     border: solid 5px $border-profile;
     &-1 {
-      background-image: url("/img/others/B.J-min.webp");
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/B.J-min_cuqqbp.webp");
       background-repeat: no-repeat;
       background-size: contain;
       user-select: none;
     }
     &-2 {
-      background-image: url("/img/others/PM-min.webp");
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/PM-min_ynqxah.webp");
       background-repeat: no-repeat;
       background-size: contain;
       user-select: none;
     }
     &-3 {
-      background-image: url("/img/others/JL-min.webp");
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/JL-min_jlzact.webp");
       background-repeat: no-repeat;
       background-size: contain;
       user-select: none;

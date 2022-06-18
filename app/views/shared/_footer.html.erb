@@ -4,12 +4,13 @@
       <div class="container-fluid p-5">
         <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
           <div class="col footer-logo my-3 m-auto">
-            <a href="#accueil"
-              ><img
+            <a href="#accueil">
+              <%# <img
                 src="/img/logo/full-Logo-min.webp"
                 alt="jardica - accueil"
-                loading="lazy"
-            /></a>
+                loading="lazy"/> %>
+                <%= cl_image_tag('https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496098/jardi_ca/full-Logo-min_huifct.webp', :alt=>'Jardica - accueil') %>
+            </a>
           </div>
           <div class="col mb-3">
             <h3>Plan du site</h3>
