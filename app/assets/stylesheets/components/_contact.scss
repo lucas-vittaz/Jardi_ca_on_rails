@@ -44,6 +44,12 @@
     color: whitesmoke;
     text-decoration: none;
   }
+  #btn-submit:hover {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    background: $my-primary !important;
+  }
   .map-position {
     position: relative;
   }
@@ -76,12 +82,7 @@
     margin-right: 5px;
   }
 }
-#btn-submit:hover {
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
-  background: $my-primary !important;
-}
+
 
 .clippath-bottom {
   border-radius: 50% 50% 0 0;
