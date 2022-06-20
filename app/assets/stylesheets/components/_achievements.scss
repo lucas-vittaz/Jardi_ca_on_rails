@@ -1,0 +1,40 @@
+/* ---Nos realisations--- */
+#realisations {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(2.41%, rgba(105, 128, 32, 0.05)),
+    color-stop(49.15%, rgba(153, 164, 119, 0.0802335)),
+    color-stop(99.95%, rgba(196, 196, 196, 0))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(105, 128, 32, 0.05) 2.41%,
+    rgba(153, 164, 119, 0.0802335) 49.15%,
+    rgba(196, 196, 196, 0) 99.95%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(105, 128, 32, 0.05) 2.41%,
+    rgba(153, 164, 119, 0.0802335) 49.15%,
+    rgba(196, 196, 196, 0) 99.95%
+  );
+  .carousel-caption {
+    background: rgba(105, 128, 32, 0.1);
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .carousel-item img {
+    height: auto;
+  }
+}
+.clippath {
+  width: 100%;
+  height: 100px;
+}
+.clippath-top {
+  border-radius: 0 0 50% 50%;
+  background-color: rgba(105, 128, 32, 0.05) !important;
+}

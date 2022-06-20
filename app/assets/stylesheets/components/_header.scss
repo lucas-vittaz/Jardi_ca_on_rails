@@ -1,0 +1,69 @@
+// header
+
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496109/jardi_ca/header-min_dtfn7o.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  user-select: none;
+
+  #header-1 {
+    position: absolute;
+    background: rgba(105, 128, 32, 0.5);
+    width: auto;
+    top: 42%;
+    left: 5%;
+    border-radius: 5px !important;
+  }
+  .btn-enter {
+    background: transparent;
+    color: whitesmoke;
+    font-weight: 500;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1em 2.5em;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none !important;
+    border-radius: 5px;
+  }
+  .btn-enter:hover {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    background: $my-primary;
+    color: whitesmoke;
+    text-decoration: none !important;
+  }
+
+  #masthead-title P {
+    color: whitesmoke;
+  }
+
+  #masthead-contact {
+    p {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    .fa-envelope {
+      color: whitesmoke;
+    }
+    .fa-phone {
+      color: whitesmoke;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  #header-1 {
+    top: 34% !important;
+  }
+}

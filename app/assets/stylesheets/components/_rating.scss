@@ -1,0 +1,49 @@
+/* ---Nos avis--- */
+#rating {
+  .my-card {
+    position: relative;
+    background-color: $bg-cards;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    width: auto;
+    height: auto;
+    box-shadow: 0 14px 26px $shadow-cards;
+    transition: all 0.3s ease-out;
+    p {
+      font-size: 0.8rem;
+      color: whitesmoke;
+    }
+  }
+  .my-card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards !important;
+  }
+  .profile {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -10%;
+    left: 10%;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 5px $border-profile;
+    &-1 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/B.J-min_cuqqbp.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+    &-2 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/PM-min_ynqxah.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+    &-3 {
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/JL-min_jlzact.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      user-select: none;
+    }
+  }
+}
