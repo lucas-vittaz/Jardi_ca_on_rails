@@ -1,0 +1,104 @@
+/* ---Nos prestations--- */
+
+#prestations {
+  background-color: $bg-prestations;
+  position: relative;
+  height: auto;
+  a{
+    color: $my-secondary;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $my-primary;
+  }
+  .bold-title {
+    color: whitesmoke;
+    font-family: Italiana;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .card {
+    background-color: $my-secondary !important;
+    color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    display: block;
+    box-shadow: 0 14px 26px $shadow-cards;
+    transition: all 0.3s ease-out;
+
+    .card-body {
+      position: relative;
+    }
+    .prestations_img {
+      position: absolute;
+      top: -50%;
+      right: -12%;
+      background-image: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/tax_credit_wmwmjo.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 250px;
+      height: 250px;
+      user-select: none;
+    }
+    .card-title {
+      position: relative;
+    }
+    ul li {
+      list-style: url("https://res.cloudinary.com/lucas-vittaz/image/upload/v1655496108/jardi_ca/liste_style_fs5j31.svg") !important;
+      user-select: none;
+    }
+    ul li::marker {
+      font-size: 2rem;
+    }
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    border-left: 10px solid $my-primary!important;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .prestations_img {
+    top: 90% !important;
+    right: 0% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+  #lottie-creation {
+    display: none;
+  }
+  #lottie-services {
+    width: 250px !important;
+    height: auto !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1019px) {
+  .prestations_img {
+    top: -10% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1019px) and (max-width: 1231px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1232px) and (max-width: 1400px) {
+  .prestations_img {
+    top: -50%;
+    right: -30% !important;
+  }
+}

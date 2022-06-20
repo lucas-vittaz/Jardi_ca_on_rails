@@ -1,0 +1,26 @@
+/* ---A propos--- */
+#propos {
+  #img img {
+    user-select: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    box-shadow: 5px 5px 10px #c0c0c0;
+  }
+  a {
+    color: $my-secondary;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $my-primary;
+  }
+}
